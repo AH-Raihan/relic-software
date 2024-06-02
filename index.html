@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relic Software</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #008080; /* Teal background */
+    color: white;
+    text-align: center;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  .header {
+    background: #fff; /* Darker teal shade */
+    padding: 10px 0;
+    color:#004d4d;
+  }
+  .header h1 {
+    margin: 0;
+  }
+  .tagline {
+    margin: 20px 0;
+    font-size: 1.5em;
+    font-style: italic;
+  }
+  .content {
+    padding: 20px 0;
+  }
+  .footer {
+    background: #004d4d; /* Darker teal shade */
+    padding: 10px 0;
+    
+    bottom: 0;
+    width: 100%;
+  }
+  /* Our Services Section CSS */
+#services {
+  background-color: #e0f2f1; /* Light teal background */
+  color: #004d4d; /* Dark teal text */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service {
+  margin: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 30%;
+}
+
+.service i {
+  font-size: 3rem;
+  color: #008080; /* Teal color for icons */
+  margin-bottom: 10px;
+}
+
+.service h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .service {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+  /* Our Projects Section CSS */
+#projects {
+  background-color: #e0f2f1; /* Light teal background */
+  color: #004d4d; /* Dark teal text */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  margin: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 30%;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd; /* Separator for image and text */
+}
+
+@media (max-width: 600px) {
+  .project {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+  /* Team Section CSS */
+.team-section {
+  background-color: #e0f2f1; /* Light teal background */
+  color: #004d4d; /* Dark teal text */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.team-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.team-member {
+  margin: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  background: white;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+}
+
+.team-info {
+  padding: 15px;
+}
+
+.team-info h3 {
+  margin-top: 0;
+}
+
+.title {
+  color: #008080; /* Teal color for titles */
+}
+
+@media (max-width: 600px) {
+  .team-container {
+    flex-direction: column;
+  }
+}
+/* Testimonials Section CSS */
+#testimonials {
+  background-color: #e0f2f1; /* Light teal background */
+  color: #004d4d; /* Dark teal text */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.testimonial-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.testimonial {
+  margin: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial-author {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #008080; /* Teal color for author names */
+}
+
+@media (max-width: 600px) {
+  .testimonial-container {
+    flex-direction: column;
+  }
+}
+
+
+</style>
+</head>
+<body>
+  <div class="header">
+  <img src="logo.jpg" width="90px"/>
+    <h1>Relic Software</h1>
+  </div>
+  <div class="container">
+    <p class="tagline">Unlocking the Past, Shaping the Future.</p>
+    <div class="content">
+      <!-- Content goes here -->
+      <p>Welcome to Relic Software, where we are develop into history to innovate for tomorrow.</p>
+   </div>
+   </div>
+   
+   <!-- Our Services Section -->
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services-container">
+    <!-- Service 1 -->
+    <div class="service">
+      <i class="fas fa-code"></i>
+      <h3>Custom Software Development</h3>
+      <p>We build tailored software solutions to meet your business needs.</p>
+    </div>
+    <!-- Service 2 -->
+    <div class="service">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>Mobile App Development</h3>
+      <p>Engage your audience with cutting-edge mobile applications.</p>
+    </div>
+    <!-- Service 3 -->
+    <div class="service">
+      <i class="fas fa-cloud"></i>
+      <h3>Cloud Services</h3>
+      <p>Scale your operations with secure and reliable cloud platforms.</p>
+    </div>
+    <!-- Add more services as needed -->
+  </div>
+</section>
+
+<!-- Our Projects Section -->
+<section id="projects">
+  <h2>Our Projects</h2>
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project">
+      <img src="project1.jpg" alt="Project 1" class="project-image">
+      <h3>School Management</h3>
+      <p>A brief description of Project One.</p>
+    </div>
+    <!-- Project 2 -->
+    <div class="project">
+      <img src="project2.jpg" alt="Project 2" class="project-image">
+      <h3>E-commerce Site</h3>
+      <p>A brief description of Project Two.</p>
+    </div>
+    <!-- Add more projects as needed -->
+  </div>
+</section>
+
+
+
+
+   <!-- Team Member Profiles Section -->
+<div class="team-section">
+  <h2>Our Team</h2>
+  <div class="team-container">
+    <!-- Team Member 1 -->
+    <div class="team-member">
+      <img src="team_member_1.webp" alt="Team Member 1" style="width:100%">
+      <div class="team-info">
+        <h3>Azizul Hasan Raihan</h3>
+        <p class="title">CEO & Founder</p>
+        <p>Passionate about technology and innovation, Jane leads our team to new heights.</p>
+      </div>
+    </div>
+    <!-- Team Member 2 -->
+    <div class="team-member">
+      <img src="team_member_2.png" alt="Team Member 2" style="width:100%">
+      <div class="team-info">
+        <h3>Arif Chowdhury</h3>
+        <p class="title">CTO</p>
+        <p>Ariful Islam is the mastermind behind our cutting-edge software solutions.</p>
+      </div>
+    </div>
+    <!-- Add more team members as needed -->
+  </div>
+</div>
+
+   <!-- Testimonials Section -->
+<section id="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial-container">
+    <!-- Testimonial 1 -->
+    <div class="testimonial">
+      <img src="client1.jpg" alt="Client 1" class="testimonial-avatar">
+      <blockquote class="testimonial-text">
+        "Relic Software transformed our business with their innovative solutions. Their team was dedicated and professional throughout the project."
+      </blockquote>
+      <p class="testimonial-author">- Alex Johnson, CEO of Innotech</p>
+    </div>
+    <!-- Testimonial 2 -->
+    <div class="testimonial">
+      <img src="client2.jpg" alt="Client 2" class="testimonial-avatar">
+      <blockquote class="testimonial-text">
+        "The attention to detail and the relentless determination of Relic Software to deliver top-notch quality is what sets them apart."
+      </blockquote>
+      <p class="testimonial-author">- Samantha Lee, Founder of Creativio</p>
+    </div>
+    <!-- Add more testimonials as needed -->
+  </div>
+</section>
+
+   
+   
+  
+  <div class="footer">
+    <p>© 2024 Relic Software</p>
+  </div>
+<script>
+  // JavaScript can go here if needed
+</script>
+</body>
+</html>
