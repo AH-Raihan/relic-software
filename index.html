@@ -217,6 +217,44 @@
     flex-direction: column;
   }
 }
+/* Contact Links & Location Section CSS */
+#contact-info {
+  background-color: #e0f2f1; /* Light teal background */
+  color: #004d4d; /* Dark teal text */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact-details {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.location-map,
+.contact-links {
+  margin: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 45%;
+}
+
+.social-media-links a {
+  margin-right: 10px;
+  /* Add more styles here */
+}
+
+@media (max-width: 600px) {
+  .location-map,
+  .contact-links {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 
 
 </style>
@@ -309,11 +347,11 @@
   </div>
 </div>
 
-   <!-- Testimonials Section -->
+   <!-- Testimonials Section 
 <section id="testimonials">
   <h2>What Our Clients Say</h2>
   <div class="testimonial-container">
-    <!-- Testimonial 1 -->
+    
     <div class="testimonial">
       <img src="client1.jpg" alt="Client 1" class="testimonial-avatar">
       <blockquote class="testimonial-text">
@@ -321,7 +359,7 @@
       </blockquote>
       <p class="testimonial-author">- Alex Johnson, CEO of Innotech</p>
     </div>
-    <!-- Testimonial 2 -->
+    
     <div class="testimonial">
       <img src="client2.jpg" alt="Client 2" class="testimonial-avatar">
       <blockquote class="testimonial-text">
@@ -329,12 +367,37 @@
       </blockquote>
       <p class="testimonial-author">- Samantha Lee, Founder of Creativio</p>
     </div>
-    <!-- Add more testimonials as needed -->
+   Add more testimonials as needed 
   </div>
 </section>
-
+-->
    
-   
+   <!-- Contact Links & Location Section -->
+<section id="contact-info">
+  <h2>Contact Information</h2>
+  <div class="contact-details">
+    <!-- Location Map -->
+    <div class="location-map">
+      <h3>Our Page</h3>
+      <!-- Embed your location using Google Maps iframe or similar service -->
+      <iframe src="https://www.facebook.com/profile.php?id=61560641483721" frameborder="0" style="border:0; width: 100%; height: 300px;" allowfullscreen></iframe>
+    </div>
+    <!-- Contact Links -->
+    <div class="contact-links">
+      <h3>Get in Touch</h3>
+      <p>Email: contact@relicsoftware.com</p>
+      <p>Phone: +8801606-130229</p>
+      <div class="social-media-links">
+        <!-- Social Media Icons -->
+        <a href="#" target="_blank">Twitter</a>
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/profile.php?id=61560641483721" target="_blank">Facebook</a>
+        <!-- Add more social media links as needed -->
+      </div>
+    </div>
+  </div>
+</section>
+  
   
   <div class="footer">
     <p>© 2024 Relic Software</p>
