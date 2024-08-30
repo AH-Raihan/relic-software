@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relic Software</title>
+    <link rel="icon" href="logo-square.png" type="image/x-icon">
     <style>
         body {
             font-display: block !important;
@@ -2222,24 +2223,105 @@
             display: block;
         }
 
-        #expertise {
+
+        #projects {
             background-color: #fff;
             padding: 40px 20px;
         }
 
-        .container {
+        #projects.container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        h1 {
+        #projects h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
             color: #333;
         }
 
-        p {
+        #projects p {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        .projects-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project-item {
+            flex: 1;
+            min-width: 280px;
+            background: #e9e9e9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+
+            color: var(--card-textColorSecondary);
+            background: var(--card-bg);
+            box-shadow: var(--card-boxShadow);
+            box-sizing: border-box;
+            border-color: var(--card-borderColor);
+            border-style: solid;
+            border-width: var(--card-borderWidth);
+            border-radius: var(--card-borderRadius);
+        }
+
+        .project-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project-info p {
+            font-size: 1em;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .project-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        #expertise {
+            background-color: #fff;
+            padding: 40px 20px;
+        }
+
+        #expertise .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        #expertise h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #expertise p {
             font-size: 1.1em;
             margin-bottom: 40px;
             color: #666;
@@ -2292,8 +2374,6 @@
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             color: var(--card-textColorSecondary);
             background: var(--card-bg);
             box-shadow: var(--card-boxShadow);
@@ -2435,6 +2515,65 @@
             </div>
         </div>
     </section>
+    <section id="projects">
+        <div class="wr">
+
+            <div class="container">
+                <h1>Our Projects</h1>
+                <p>Explore some of the standout projects we’ve delivered at <strong>Relic Software</strong>. Each
+                    project showcases our commitment to quality and innovation.</p>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <img src="project1.jpg" alt="School Management Software">
+                        <div class="project-info">
+                            <h2>School Management Software</h2>
+                            <p>School Management Software is a comprehensive digital solution designed to streamline and
+                                automate various administrative and academic tasks within educational institutions. This
+                                software integrates multiple functions into a single platform, including student
+                                enrollment, attendance tracking, grade management, timetable scheduling, and
+                                communication between teachers, students, and parents. By providing a centralized system
+                                for managing academic records, managing staff and resources, and generating reports, the
+                                software enhances operational efficiency and supports effective decision-making,
+                                ultimately contributing to a more organized and productive educational environment.</p>
+                            <a href="https://madrasatuir.com/" class="project-link">Live View</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="project2.jpg" alt="E-Commerce Website">
+                        <div class="project-info">
+                            <h2>E-Commerce Website</h2>
+                            <p>E-Commerce Website is a dynamic online platform designed to facilitate buying and selling
+                                products or services over the internet. This software provides a user-friendly interface
+                                that allows customers to browse a wide range of products, view detailed descriptions,
+                                and make purchases with ease. Key features include secure payment processing, real-time
+                                inventory management, and personalized shopping experiences. The platform supports
+                                various payment methods, integrates with shipping solutions, and offers tools for
+                                tracking orders and managing customer accounts. With robust search and filtering
+                                options, it enhances user engagement and satisfaction, making it a powerful tool for
+                                businesses looking to expand their reach and streamline their sales operations in the
+                                digital marketplace.</p>
+                            <a href="https://masafshop.xyz/" class="project-link">Live View</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="project3.jpg" alt="New Portal Website">
+                        <div class="project-info">
+                            <h2>New Portal Website</h2>
+                            <p>News Portal Website is a comprehensive online platform designed to deliver the latest and
+                                most relevant news and information to users. This website aggregates and presents a wide
+                                range of news stories, including breaking news, politics, entertainment, sports, and
+                                more, in an organized and user-friendly format. Key features often include real-time
+                                updates, categorized news sections, multimedia content (such as images and videos), and
+                                interactive elements like comment sections and social media integration. The platform is
+                                designed to provide users with timely, accurate, and engaging content, making it a go-to
+                                source for staying informed about current events and trends.</p>
+                            <a href="https://www.messianfcb.com/" class="project-link">Live View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="key-features" id="key-features">
         <div class="wr">
             <div class="_846999e0">
@@ -2484,55 +2623,59 @@
     </section>
     <section id="expertise">
         <div class="wr">
-        <div class="container">
-            <h1>Our Expertise</h1>
-            <p>At <strong>Relic Software</strong>, we pride ourselves on our deep technical knowledge and hands-on
-                experience with a diverse array of programming languages and technologies. Our team of experts is
-                skilled in the following areas:</p>
-            <div class="expertise-list">
-                <div class="expertise-item">
-                    <h2>HTML & CSS</h2>
-                    <ul>
-                        <li><strong>HTML:</strong> Crafting well-structured, semantic, and accessible web content to
-                            ensure a strong foundation for all web projects.</li>
-                        <li><strong>CSS:</strong> Designing visually appealing and responsive layouts using the latest
-                            standards to enhance user experience across devices.</li>
-                    </ul>
-                </div>
-                <div class="expertise-item">
-                    <h2>JavaScript & jQuery</h2>
-                    <ul>
-                        <li><strong>JavaScript:</strong> Implementing dynamic, interactive features and improving user
-                            experiences with modern JavaScript techniques and frameworks.</li>
-                        <li><strong>jQuery:</strong> Streamlining complex interactions and animations to create smooth,
-                            engaging web applications with this versatile library.</li>
-                    </ul>
-                </div>
-                <div class="expertise-item">
-                    <h2>PHP & Laravel</h2>
-                    <ul>
-                        <li><strong>PHP:</strong> Building robust server-side applications and custom solutions with
-                            this widely-used scripting language to power dynamic websites and applications.</li>
-                        <li><strong>Laravel:</strong> Leveraging this powerful PHP framework to develop elegant,
-                            scalable, and secure web applications with clean, readable code.</li>
-                    </ul>
-                </div>
-                <div class="expertise-item">
-                    <h2>Python</h2>
-                    <ul>
-                        <li><strong>Python:</strong> Developing versatile applications and data-driven solutions using
-                            this intuitive and powerful language known for its readability and efficiency.</li>
-                    </ul>
-                </div>
-                <div class="expertise-item">
-                    <h2>Node.js</h2>
-                    <ul>
-                        <li><strong>Node.js:</strong> Crafting fast, scalable server-side applications and real-time
-                            network applications with this event-driven, non-blocking I/O runtime environment.</li>
-                    </ul>
+            <div class="container">
+                <h1>Our Expertise</h1>
+                <p>At <strong>Relic Software</strong>, we pride ourselves on our deep technical knowledge and hands-on
+                    experience with a diverse array of programming languages and technologies. Our team of experts is
+                    skilled in the following areas:</p>
+                <div class="expertise-list">
+                    <div class="expertise-item">
+                        <h2>HTML & CSS</h2>
+                        <ul>
+                            <li><strong>HTML:</strong> Crafting well-structured, semantic, and accessible web content to
+                                ensure a strong foundation for all web projects.</li>
+                            <li><strong>CSS:</strong> Designing visually appealing and responsive layouts using the
+                                latest
+                                standards to enhance user experience across devices.</li>
+                        </ul>
+                    </div>
+                    <div class="expertise-item">
+                        <h2>JavaScript & jQuery</h2>
+                        <ul>
+                            <li><strong>JavaScript:</strong> Implementing dynamic, interactive features and improving
+                                user
+                                experiences with modern JavaScript techniques and frameworks.</li>
+                            <li><strong>jQuery:</strong> Streamlining complex interactions and animations to create
+                                smooth,
+                                engaging web applications with this versatile library.</li>
+                        </ul>
+                    </div>
+                    <div class="expertise-item">
+                        <h2>PHP & Laravel</h2>
+                        <ul>
+                            <li><strong>PHP:</strong> Building robust server-side applications and custom solutions with
+                                this widely-used scripting language to power dynamic websites and applications.</li>
+                            <li><strong>Laravel:</strong> Leveraging this powerful PHP framework to develop elegant,
+                                scalable, and secure web applications with clean, readable code.</li>
+                        </ul>
+                    </div>
+                    <div class="expertise-item">
+                        <h2>Python</h2>
+                        <ul>
+                            <li><strong>Python:</strong> Developing versatile applications and data-driven solutions
+                                using
+                                this intuitive and powerful language known for its readability and efficiency.</li>
+                        </ul>
+                    </div>
+                    <div class="expertise-item">
+                        <h2>Node.js</h2>
+                        <ul>
+                            <li><strong>Node.js:</strong> Crafting fast, scalable server-side applications and real-time
+                                network applications with this event-driven, non-blocking I/O runtime environment.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <section class="_c606dab5">
